@@ -3,31 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kishore Kumar</title>
+    <title>Document</title>
+    <style>
+        marquee{
+            background-color: bisque;
+        }
+
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th{
+            background-color: bisque;
+        }
+
+
+    </style>
 </head>
 <body>
-    <!-- Commands in HTML -->
-    <!-- Hello, World! -->
-     <!-- HTML Elements -->
+    <marquee style="height: 150px;" loop="3" behavior="slide" direction="down">Hello Vikas👍👍😊😊👍</marquee>
+    <marquee style="height: 150px;" behavior="alternate" direction="up">Hello Vikas👍👍😊😊👍</marquee>
+    <marquee scrolldelay="1000" behavior="slide" direction="left">Hello Vikas👍👍😊😊👍</marquee>
+    <marquee scrollamount="2    0" behavior="scroll" direction="right">Hello Vikas👍👍😊😊👍</marquee>
 
-     <h1>Hello <br> <br> HTML</h1>
-     <hr>
-     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, fugit! Ipsa, inventore, asperiores omnis dolorum repellendus et obcaecati, sequi beatae esse exercitationem <br> officiis tempore modi ut eaque eum. Laudantium, repudiandae.
-    </p>
-    <hr>
-    <pre>
-        Hello       
-                     Vikas And 
-                            tharani
-    </pre>
 
-    <!-- Attributes of the HTML -->
-    <!-- <element attribute> </element>-->
-     <a href="https://www.linkedin.com/in/praveen-python-developer/">LinkedIn</a>
-<br>
-<br><br>
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Virat_Kohli_in_PMO_New_Delhi.jpg/250px-Virat_Kohli_in_PMO_New_Delhi.jpg" alt="Virat" width="200" height="200">
+    <h1><a href="hello.html">Previous Page</a></h1>
+
+    <h2><a href="https://developer.mozilla.org/en-US/" target="_blank"><abbr title="Mozilla Developer Network">MDN</abbr></a></h2>
+
+
+    <!-- unordered list ==> ul -> li -->
+
+    <ul style="list-style-type: square;">
+        <li>Praveen</li>
+        <li>Vikas</li>
+        <li>Tharani</li>
+        <li>Kishore</li>
+    </ul>
+
+    <ol  style="list-style-type: decimal-leading-zero;">
+        <li>Samsung</li>
+        <li>Apple</li>
+        <li>Realme</li>
+        <li>Oppo</li>
+    </ol>
+
+    <dl>
+        <!-- dt ==> description title, dd ==> description data -->
+
+        <dt>Lenovo</dt>
+        <dd>Lenovo is famous Laptop Company..</dd>
+
+        <dt>Samsung</dt>
+        <dd>Samsung is famous Mobile Company..</dd>
+
+        <dt>Livewire</dt>
+        <dd>Livewire is IT Industrial Training Institute..</dd>
+    </dl>
+
+
+
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>City</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Vikas</td>
+            <td rowspan="2">Java</td>
+            <td>Salem</td>
+            <td>Zoho</td>
+        </tr>
+        <tr>
+            <td>Tharani</td>
+            <!-- <td>Java</td> -->
+            <td>Benglure</td>
+            <td>Wipro</td>
+        </tr>
+        <tr>
+            <td colspan="2">Kishore</td>
+            <!-- <td>Python</td> -->
+            <td colspan="2">Kovai</td>
+            <!-- <td>TCS</td> -->
+        </tr>
+    </table>
 
 
 
