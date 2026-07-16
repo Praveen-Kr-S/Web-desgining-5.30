@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            font-size: larger;
+            font-weight: 600;
+            padding: 20px;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        a{
+            text-decoration-line: none;
+            color: black;
+        }
+
+
+        section{
+            height: 100vh;
+            background-color: rgb(234, 255, 196);
+            color: gold;
+            padding: 15px;
+        }
+
+
+        #c{
+            color: brown;
+        }
+
+        .p{
+          background-color: rgb(196, 232, 255);  
+
+          color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li><a href="#c">Customer</a></li>
+                <li><a href="Html_elements.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 
+        Types of Selector...
+
+        1.element
+        2.class
+        3.id
+        -->
+
+        <section>
+            <h1 style="text-align: center;">Home</h1>
+            <div style="color: black;">
+                <h1 style="text-align: center;">Welcome to Livewire</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem, voluptas ipsa laborum maiores, facilis id cupiditate at magnam odit debitis nulla ut laudantium voluptates, neque similique quis dolore adipisci necessitatibus vitae corporis asperiores incidunt consequatur non. Alias autem maxime blanditiis similique assumenda molestiae praesentium, ipsa dolorum animi pariatur mollitia!</p>
+            </div>
+        </section>
+
+        <section class="p">
+            <h1>Product</h1>
+        </section>
+
+        <section style="color: dimgray;"  id="c" class="p">
+            <h1>Customer</h1>
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>Live Data @2025</h5>
+    </footer>
+
+</body>
+</html>
