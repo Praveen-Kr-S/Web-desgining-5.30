@@ -1,0 +1,20 @@
+*{
+    color: rgb(112, 112, 1);
+}
+
+
+.g{
+    color: rgb(5, 98, 190);
+}
+body{
+    color: #723f01;
+}
+
+
+h3,h4{
+    background-color: rgb(175, 242, 242);
+}
+
+.t:hover{
+    color: gold;
+}
