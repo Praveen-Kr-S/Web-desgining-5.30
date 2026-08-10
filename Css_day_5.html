@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            color: rgb(141, 57, 57);
+        }
+        .d{
+           background-color: #777;
+           height: 100vh;
+        }
+
+        .square{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(38, 99, 153);
+            position: absolute;
+            left: 0px;
+        }
+
+        .m{
+            width: 250px;
+            height: 200px;  
+            background-color: bisque;
+            padding: 20px;
+        }
+
+        input{
+            color: inherit;
+        }
+
+        .bg{
+            height: 100vh;
+            background-image: url(10001\ \(1\).jpg);
+            
+        }
+
+        .bc{
+            height: 100vh;
+            background-color: black;
+            opacity: 0.7;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- z - index -->
+
+    <div class="d">
+        <div style="background-color: burlywood; z-index: 2;" class="square"></div>
+        <div style="background-color: rgb(170, 222, 135); z-index: 1;" class="square"></div>
+        <div style="background-color: rgb(135, 216, 222); z-index: 5;" class="square"></div>
+        <div style="background-color: rgb(208, 135, 222);" class="square"></div>
+    </div>
+
+    <div class="d" style="background-color: coral;">
+        <h1 style="text-align: center; padding-top: 50px;">Overflow</h1>
+        <div style="background-color: coral; display: flex; justify-content: space-evenly; padding-top: 100px;">
+        <div class="m" style="overflow: visible;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        <div class="m" style="overflow: hidden;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        <div class="m" style="overflow: scroll;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        <div class="m" style="overflow: auto;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="d" style="background-color: coral;">
+        <h1 style="text-align: center; padding-top: 50px;">Float</h1>
+        <div style="background-color: coral; padding-top: 100px;">
+        <div class="m" style="float: left;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        <div class="m" style="float: right;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum veritatis doloremque quaerat fugiat culpa, voluptatibus ea doloribus nobis tempora nesciunt voluptas quisquam cupiditate facilis quo excepturi deleniti. Eligendi maxime totam magni ipsam voluptates asperiores ex, repudiandae velit non optio mollitia in, provident consequatur veniam nesciunt possimus natus, accusamus commodi.</p>
+        </div>
+        <br><br>
+        <input type="text" >
+
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="bc"></div>
+    </div>
+    
+</body>
+</html>
