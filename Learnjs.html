@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1></h1>
+    <h1 id="dd"></h1>
+    <h1 class="cc"></h1>
+    <h1 class="cc"></h1>
+
+    <h2></h2>
+    <h2 class="c"></h2>
+    <h2 id="i"></h2>
+
+    <!-- Java Script Data type -->
+
+    <h1>Javascript Datatype</h1>
+    <ul>
+        <li class="dt"></li>
+        <li class="dt"></li>
+        <li class="dt"></li>
+        <li class="dt"></li>
+    </ul>
+
+
+    <!-- Arithmetic Operator -->
+     <h1>Aritmetic Operator</h1>
+     <h1 class="ar"></h1>
+     <h1 class="ar"></h1>
+     <h1 class="ar"></h1>
+     <h1 class="ar"></h1>
+     <h1 class="ar"></h1>
+
+    <script>
+        //variable
+        
+        // let name = "Vikas";
+        // document.write(name)
+        // document.writeln("Praveen")
+
+        // DOM
+
+        document.getElementsByTagName("h1")[0].innerText="Gowri Priya";
+        document.getElementById("dd").innerHTML="Vikas";
+        document.getElementsByClassName("cc")[0].innerHTML="Tharani";
+        document.getElementsByClassName("cc")[1].innerHTML="Kishore";
+
+        document.querySelector("h2").innerHTML="Learn React.js";
+        document.querySelector(".c").innerHTML="Learn Springboot";
+        document.querySelector("#i").innerHTML="Learn AWS";
+        document.querySelector("#i").style.color = "red";
+
+
+        document.getElementsByClassName("dt")[0].innerHTML=typeof(2);
+        document.getElementsByClassName("dt")[1].innerHTML=typeof(2.2);
+        document.getElementsByClassName("dt")[2].innerHTML=typeof("Vikas");
+        document.getElementsByClassName("dt")[3].innerHTML=typeof(false);
+        
+        // Arithmetic 
+        // +,-,*,/,%
+
+        let Vikas = 1000;
+        let Tharani = 100;
+
+        let sum = Vikas+Tharani;
+        document.getElementsByClassName("ar")[0].innerHTML=`Add Value : ${sum}`;
+        document.getElementsByClassName("ar")[1].innerHTML=`Subtract Value : ${Vikas-Tharani}`;
+        document.getElementsByClassName("ar")[2].innerHTML=`Multiple Value : ${Vikas*Tharani}`;
+        document.getElementsByClassName("ar")[3].innerHTML=`Divide Value : ${Vikas/Tharani}`;
+        document.getElementsByClassName("ar")[4].innerHTML=`Modules Value : ${Vikas%Tharani}`;
+
+
+    </script>
+</body>
+
+</html>
