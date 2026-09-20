@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <h1>Array in Javascript</h1>
+    <h2>
+        <pre>
+    1.Litral Method
+        scope array_variable = [no of datas..,];
+        </pre>
+    </h2>
+
+        <h3 class="ar"></h3>
+        <h3 class="ar"></h3>
+    <script>
+        let ar = [30,40,4.6,true,'React.js',40];
+        
+        document.getElementsByClassName("ar")[0].innerHTML=ar;
+
+        let arr = [];
+        arr[0] = 56;
+        arr[1] = 96;
+        arr[2] = true;
+        arr[3] = "Javascript";
+        arr[4] = "React.js";
+
+        document.getElementsByClassName("ar")[1].innerHTML=arr;
+        // for of loop for array
+        /*
+            for(scope variable of array){
+                //looping sequence
+            }        
+        */
+        document.writeln("-------------------------------","</br>")
+        for(let i of arr){
+            document.writeln(i,"</br>")
+        }
+        document.writeln("-------------------------------","</br>")
+    </script>
+
+    <h1>Object in Javascript</h1>
+
+    <h2>
+        <pre>
+            scope variable = {
+                key:value,
+                key:value,
+            }
+        </pre>
+    </h2>
+
+    <script>
+        // Object
+
+        let student_info = {
+            "name":"Vikas",
+            "age":20,
+            "city":"Salem",
+            "course":"Java Fs",
+        }
+
+        //Object.key
+        document.writeln(student_info.name,"</br>")
+        document.writeln(student_info.age,"</br>")
+        document.writeln(student_info.city,"</br>")
+        document.writeln(student_info.course,"</br>")
+        
+
+        document.writeln("-------------------------------","</br>")
+    </script>
+
+    <h1>Strings</h1>
+    <h2>
+        String is sequence of character, it sourroned by '' or ""
+    </h2>
+
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <h3 class="ss"></h3>
+    <script>
+        let c = "JavaScript";
+        document.getElementsByClassName("ss")[0].innerHTML=c;
+        //variable.build-in-functions
+        document.getElementsByClassName("ss")[1].innerHTML=c.charAt(4);
+        document.getElementsByClassName("ss")[1].innerHTML=c.indexOf("i");
+        document.getElementsByClassName("ss")[2].innerHTML=c.toUpperCase();
+        document.getElementsByClassName("ss")[3].innerHTML=c.toLowerCase();
+        document.getElementsByClassName("ss")[4].innerHTML=c.concat(" Program");
+        document.getElementsByClassName("ss")[5].innerHTML=c;
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
