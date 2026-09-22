@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>functions in Js</h1>
+    <h2 class="add"></h2>
+    <script>
+        //functions
+        /*
+        --> function declaration
+            function function_name(argument_area){
+                //block of code
+            }
+        -->Function Call
+            function_name();
+        */
+        //1.without argument without return type function.
+        function fire(){
+            console.log("Fire Mode is ON...")
+        }
+
+        // fire();
+        // console.log("Hello Tharani")
+        // console.log("Hello Gowri Priya")
+        // fire();
+        // fire();
+
+        //2.with argument without return type function.
+
+        function add(a,b){
+            let c = a+b;
+            document.writeln("Add Value : ",c,"<br>")
+        }
+
+        add(100,5);
+        add(1,5);
+        add(15,5);
+
+        //return type -> return keyword
+        //3.without argument with return type function.
+
+        /*
+        --> function declaration
+            function function_name(argument_area){
+                //block of code
+                //return value
+            }
+
+        -->Function Call
+            function_name();
+        */
+
+
+        function demo(){
+            var name = "Tharani";
+            return name;
+        }
+
+        let x = demo();
+        document.writeln("Name : ",x,"<br>")
+        document.writeln(demo(),"<br>")
+
+        //4.with argument with return type function.
+        function concat(fn,ln){
+            var full_name = fn+" "+ln
+            return full_name;
+        }
+
+        let name = concat("Praveen","Kumar");
+        document.writeln("Full Name : ",name,"<br>")
+        document.writeln(concat("Tharani","R"),"<br>")
+
+    </script>
+</body>
+</html>
