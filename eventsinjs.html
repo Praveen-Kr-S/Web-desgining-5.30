@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>onclick</h1>
+    <h1 class="name">Gowri Priya</h1>
+    <button type="submit" onclick="changeName()">Change Name</button>
+
+
+    <h1>mouseenter</h1>
+    <h1 
+    style="background-color: bisque; text-align: center;" 
+    onmouseenter="show()"
+    onmouseleave="remove()"
+    >
+        Praveen Kumar
+    </h1>
+
+    <h2 class="info"></h2>
+
+    <script>
+        function changeName(){
+            document.getElementsByClassName("name")[0].innerHTML="Tharani";
+            document.getElementsByClassName("name")[0].style.color="red";
+        }
+
+
+        function show(){
+            document.getElementsByClassName("info")[0].innerHTML="Senior Python Developer..";
+             
+        }
+
+
+        function remove(){
+            document.getElementsByClassName("info")[0].innerHTML="";
+        }
+    </script>
+</body>
+</html>
