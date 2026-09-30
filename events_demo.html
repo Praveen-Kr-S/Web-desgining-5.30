@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<body>
+    
+    <h1>
+        Js Events
+    </h1>
+
+    <form>
+        <!-- <input id="ok" type="text" onkeydown="fun1()"> -->
+        <!-- <input id="ok" type="text" onkeyup="fun1()"> -->
+        <input id="ok" type="text" onkeypress="fun1()">
+    </form>
+
+    <script>
+        function fun1(){
+            let v = document.getElementById("ok");
+
+            v.value = v.value.toUpperCase();
+
+            document.getElementById("ok").innerHTML=v;
+
+        }
+    </script>
+</body>
+</html>
