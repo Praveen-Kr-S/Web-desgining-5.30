@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f()">Forward</button>
+    <button onclick="b()">Back</button>
+    <button onclick="g()">Go(Target Page)</button>
+    <a href="https://www.youtube.com/">Youtube</a>
+
+    <script>
+        const f = () => {window.history.forward();}
+        const b = () => {window.history.back();}
+        const g = () => {window.history.go(3);}
+    </script>
+</body>
+</html>
