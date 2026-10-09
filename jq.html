@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="dd" >Praveen Kumar</h1>
+
+    <h2 id="c">Full Stack</h2>
+    
+    <button type="submit" id="btn">Show Course</button>
+
+
+<!-- jQuery DOM Manipulation -->
+
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="btn1">show TEXT</button>
+    <button id="btn2">show HTML</button>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+        
+        // $(document).ready(
+        //     ()=>{
+        //         $("h1").mouseenter(
+        //             ()=>{
+        //                 $("h1").hide();
+        //             }
+        //         )
+        //     }
+        // )
+        
+        // $(document).ready(
+        //     ()=>{
+        //         $("h1").mouseleave(
+        //             ()=>{
+        //                 $("h1").show();
+        //             }
+        //         )
+        //     }
+        // )
+
+
+        // $(document).ready(() => {
+        //     $("#btn").click(
+        //         () => {
+        //             $("#c").hide();
+        //         }
+
+        //     )
+        // })
+
+
+        $("#btn1").click(() => {
+            alert("Text: " + $("#test").text());
+        })
+
+        $("#btn2").click(
+            ()=>{
+                alert("HTML : " + $("#test").html())
+            }
+        )
+
+
+        
+
+    </script>
+
+
+
+    
+
+</body>
+</html>
