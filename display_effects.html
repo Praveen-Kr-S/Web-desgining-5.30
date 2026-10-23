@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello React Developers</h1>
+    <button type="submit" id="h">Hide</button>
+    <button type="submit" id="s">Show</button>
+    <button type="submit" id="t">toggle</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#h").click(
+            () => {
+                $("h1").hide();
+            }
+        )
+        
+        $("#s").click(
+            () => {
+                $("h1").show();
+            }
+        )
+        
+        $("#t").click(
+            () => {
+                $("h1").toggle();
+            }
+        )
+
+    </script>
+</body>
+</html>
